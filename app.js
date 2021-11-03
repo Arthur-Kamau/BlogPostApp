@@ -65,7 +65,7 @@ app.use('/', indexRouter);
 app.use('/auth', authRouter);
 app.use('/users',requireLogin, usersRouter);
 app.use('/posts', requireLogin, postsRouter);
-app.use('/comments',requireLogin, cmtRouter);
+app.use('/comments', requireLogin, cmtRouter);
 app.use('/follow',requireLogin, followRouter);
 
 // catch 404 and forward to error handler
